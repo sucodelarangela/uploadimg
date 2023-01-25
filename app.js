@@ -10,6 +10,10 @@ require('./db');
 
 const port = process.env.PORT || 3000;
 
+// using Router
+const pictureRouter = require('./routes/picture');
+app.use('/pictures', pictureRouter);
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });

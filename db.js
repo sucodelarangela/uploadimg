@@ -10,6 +10,6 @@ async function main() {
   console.log('Database successfully connected!');
 }
 
-main().catch((err) => console.error(err)); 77;
+main().catch((err) => console.error(err));
 
 module.exports = main;
