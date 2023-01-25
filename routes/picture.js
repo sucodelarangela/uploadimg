@@ -10,5 +10,7 @@ const PictureController = require('../controllers/pictureController');
 router.post('/', upload.single('file'), PictureController.create);
 // get route to find all images
 router.get('/', PictureController.findAll);
+// delete route to delete one image
+router.delete('/:id', PictureController.remove);
 
 module.exports = router;
